@@ -1,0 +1,726 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+ zoom: 0.7;
+  font-family: "Bungee", sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  justify-content: center;
+
+  padding: 24px;
+  margin: 0 auto;
+}
+
+/* Navbar Wrapper */
+.navbars {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 12px;
+
+    border-bottom: 7px solid #000000;
+}
+
+/* Logo */
+.logo {
+  color: inherit;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Bungee", sans-serif;
+}
+
+/* Navigation */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Nav Links */
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+
+  font-size: 32px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.nav-menu a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 24px;
+
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 42px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .nav-menu a {
+    font-size: 24px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  max-width: 1060px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+
+  margin: 80px auto;
+}
+
+/* Left Content */
+.hero-content {
+  flex: 1;
+}
+
+/* Title */
+.hero-title {
+  font-family: "Gabarito", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  margin-bottom: 32px;
+}
+
+/* Description */
+.hero-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Image */
+.hero-image {
+  flex-shrink: 0;
+}
+
+.hero-image img {
+  width: 466px;
+  max-width: 100%;
+  height: auto;
+
+  display: block;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+
+    margin: 48px auto;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 24px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Social Section */
+.social {
+  width: 100%;
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 80px 0 auto;
+}
+
+/* Title */
+.social-title {
+  font-family: "Gabarito", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-right: 870px;
+
+  margin-bottom: 0px;
+}
+
+/* Card */
+.social-card {
+  width: 100%;
+  height: 117px;
+  max-width: 1069px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  padding: 32px;
+
+  background: #fff;
+
+  border: 1px solid #000;
+  border-radius: 30px;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Social Items */
+.social-item {
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 0.2s ease;
+}
+
+.social-item:hover {
+  transform: scale(1.05);
+}
+
+/* Images */
+.social-item img {
+  display: block;
+  object-fit: contain;
+}
+
+/* Individual Sizes */
+.discord img {
+  width: 160px;
+  height: 34px;
+}
+
+.youtube img {
+  width: 160px;
+  height: 90px;
+}
+
+.tiktok img {
+  width: 90px;
+  height: 90px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-card {
+    flex-wrap: wrap;
+    gap: 32px;
+
+    padding: 24px;
+  }
+
+  .social-title {
+    text-align: center;
+  }
+
+  .discord img,
+  .youtube img {
+    width: 120px;
+  }
+
+  .tiktok img {
+    width: 70px;
+  }
+}
+
+/* About Section */
+.about-section {
+  width: 100%;
+  max-width: 879px;
+
+  margin: 100px auto 0;
+}
+
+/* Title */
+.about-title {
+  text-align: center;
+
+  font-family: "Bungee", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+
+  margin-bottom: 32px;
+}
+
+/* Card */
+.about-card {
+  background: #000;
+
+  border-radius: 35px;
+
+  padding: 64px 48px;
+}
+
+/* Text */
+.about-text {
+  color: #fff;
+
+  text-align: center;
+
+  font-family: "Iosevka Charon", monospace;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    margin-top: 64px;
+  }
+
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-card {
+    padding: 40px 24px;
+  }
+
+  .about-text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+/* Content Section */
+.content-section {
+  width: 100%;
+  max-width: 890px;
+
+  margin: 100px auto 0;
+}
+
+/* Header */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+/* Title */
+.section-title {
+  font-family: "Bungee", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 12px;
+}
+
+/* Underline */
+.section-line {
+  width: 160px;
+  height: 5px;
+
+  background: #000;
+  border-radius: 99px;
+}
+
+/* Subtitle */
+.section-subtitle {
+  text-align: center;
+
+  font-family: "Iosevka Charon", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  margin-bottom: 48px;
+}
+
+/* Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 48px;
+}
+
+/* Card */
+.content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Icon */
+.content-icon {
+  width: 70px;
+  height: 70px;
+
+  margin-bottom: 20px;
+}
+
+.content-icon img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+/* Card Title */
+.content-card-title {
+  font-family: "Iosevka Charon", monospace;
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-bottom: 16px;
+}
+
+/* Card Text */
+.content-card-text {
+  font-family: "Iosevka Charon", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.headphone {
+    margin-bottom: -20px;
+}
+
+.cursor {
+    margin-bottom: -20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle,
+  .content-card-title,
+  .content-card-text {
+    font-size: 18px;
+  }
+
+  .content-card {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Biography Section */
+.biography-section {
+  width: 100%;
+  max-width: 1060px;
+
+  margin: 120px auto 0;
+}
+
+/* Header */
+.bio-header {
+  margin-bottom: 72px;
+}
+
+/* Title */
+.bio-title {
+  font-family: "Bungee", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 12px;
+}
+
+/* Divider */
+.bio-line {
+  width: 100%;
+  height: 6px;
+
+  background: #d9d9d9;
+}
+
+/* Block */
+.bio-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 64px;
+
+  margin-bottom: 120px;
+}
+
+/* Reverse Layout */
+.bio-block.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Content */
+.bio-content {
+  flex: 1;
+}
+
+/* Text */
+.bio-text {
+  font-family: "Iosevka Charon", monospace;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Image */
+.bio-image {
+  flex-shrink: 0;
+}
+
+.bio-image img {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+
+  display: block;
+  object-fit: cover;
+
+  border-radius: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bio-block,
+  .bio-block.reverse {
+    flex-direction: column;
+  }
+
+  .bio-title {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .bio-text {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .bio-image img {
+    max-width: 100%;
+  }
+
+  .bio-block {
+    margin-bottom: 80px;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+
+  margin-top: 120px;
+
+  padding: 80px 24px;
+
+  background: #000;
+}
+
+/* Container */
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+/* Brand */
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  max-width: 400px;
+}
+
+/* Purple line */
+.footer-brand-line {
+  width: 8px;
+  height: 120px;
+
+  background: #928eff;
+
+  flex-shrink: 0;
+}
+
+/* Logo */
+.footer-logo {
+  color: #fff;
+
+  font-family: "Bungee", sans-serif;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 1;
+
+  margin-bottom: 32px;
+}
+
+/* Description */
+.footer-description {
+  color: #fff;
+
+  font-family: "Iosevka Charon", monospace;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Links Wrapper */
+.footer-links {
+  display: flex;
+  gap: 120px;
+}
+
+/* Column */
+.footer-column {
+  min-width: 200px;
+}
+
+/* Column Title */
+.footer-title {
+  color: #fff;
+
+  font-family: "Bungee", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 40px;
+}
+
+/* List */
+.footer-list {
+  list-style: none;
+}
+
+/* List Item */
+.footer-list li {
+  margin-bottom: 24px;
+}
+
+/* Links */
+.footer-list a {
+  color: #fff;
+
+  text-decoration: none;
+
+  font-family: "Gabarito", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  transition: opacity 0.2s ease;
+}
+
+.footer-list a:hover {
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    width: 100%;
+
+    justify-content: space-between;
+
+    gap: 48px;
+  }
+
+  .footer-logo {
+    font-size: 64px;
+  }
+
+  .footer-description,
+  .footer-list a,
+  .footer-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+  }
+
+  .footer-brand-line {
+    width: 120px;
+    height: 8px;
+  }
+
+  .footer-logo {
+    font-size: 48px;
+  }
+}
+
+.gradient-divider {
+  width: 100%;
+  height: 38px;
+
+  background: linear-gradient(
+    90deg,
+    #6e71ff 0%,
+    #b3b4ff 33%,
+    #bad0ff 76%
+  );
+}

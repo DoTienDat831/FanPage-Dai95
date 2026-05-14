@@ -1,0 +1,244 @@
+/* Relationship Section */
+.relationship-section {
+  width: 100%;
+
+  margin-top: 120px;
+
+  padding: 80px 24px;
+
+  background:  #f1f0ff;
+}
+
+/* Title */
+.relationship-title {
+  text-align: center;
+
+  font-family: "Bungee", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 100px;
+}
+
+/* Grid */
+.relationship-grid {
+  width: 100%;
+  max-width: 1060px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 120px 32px;
+}
+
+/* Card */
+.relationship-card {
+  position: relative;
+
+  padding: 100px 32px 40px;
+
+  background: #000;
+
+  border-radius: 30px;
+
+  text-align: center;
+}
+
+/* Avatar */
+.relationship-avatar {
+  width: 160px;
+  height: 160px;
+
+  position: absolute;
+  top: -80px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid #000;
+}
+
+/* Avatar Image */
+.relationship-avatar img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Name */
+.relationship-name {
+  color: #fff;
+
+  font-family: "Iosevka Charon", monospace;
+  font-size: 32px;
+  font-weight: 400;
+
+  margin-bottom: 24px;
+}
+
+/* Description */
+.relationship-description {
+  color: #fff;
+
+  font-family: "Iosevka Charon", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .relationship-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .relationship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .relationship-title {
+    font-size: 28px;
+  }
+
+  .relationship-name {
+    font-size: 28px;
+  }
+
+  .relationship-description {
+    font-size: 20px;
+  }
+
+  .relationship-card {
+    padding: 90px 24px 32px;
+  }
+
+  .relationship-avatar {
+    width: 140px;
+    height: 140px;
+
+    top: -70px;
+  }
+}
+
+/* Inner content */
+.relationship-container {
+  width: 100%;
+  max-width: 1060px;
+
+  margin: 0 auto;
+}
+
+/* Slider Section */
+.quote-slider {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 120px auto;
+
+  text-align: center;
+}
+
+/* Header */
+.slider-header {
+  margin-bottom: 64px;
+}
+
+/* Title */
+.slider-title {
+  font-family: "Bungee", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+
+  margin-bottom: 24px;
+}
+
+/* Line */
+.slider-line {
+  width: 380px;
+  height: 4px;
+
+  margin: 0 auto;
+
+  background: #000;
+  border-radius: 99px;
+}
+
+/* Wrapper */
+.slider-wrapper {
+  position: relative;
+
+  min-height: 260px;
+
+  overflow: hidden;
+}
+
+/* Slide */
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Quote */
+.quote {
+  font-family: "Iosevka Charon", monospace;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 48px;
+}
+
+/* Dot */
+.dot {
+  width: 17px;
+  height: 17px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #d9d9d9;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.dot.active {
+  background: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-title {
+    font-size: 32px;
+  }
+
+  .slider-line {
+    width: 220px;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+}
